@@ -1,0 +1,52 @@
+.team {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-base-blue;
+  &__header {
+    @include font-size(70px, 63px, 0);
+    @include font-semi-bold;
+    margin: 80px 160px 40px;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin: 80px 80px 40px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin: 50px 50px 40px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin: 20px 20px 20px;
+        @include font-size(40px, 36px, 0);
+        width: 280px;
+      }
+    }
+  }
+  &__text {
+    @include font-size(20px, 26px, 0);
+    @include font-base;
+    width: 500px;
+    margin: 0px 160px 110px;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin-left: 80px;
+        margin: 0px 80px 110px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin: 0px 50px 140px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin: 0px 20px 60px;
+        @include font-size(12px, 15.6px, 0);
+        width: 280px;
+      }
+    }
+  }
+}

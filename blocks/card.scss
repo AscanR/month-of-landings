@@ -1,0 +1,66 @@
+.card {
+  @include reset;
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+  @media screen and (max-width: 1279px) {
+    & {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (max-width: 899px) {
+    & {
+      margin-right: 28px;
+    }
+  }
+  @media screen and (max-width: 599px) {
+    & {
+      margin-right: 20px;
+      display: none;
+      &:first-child {
+        display: flex;
+      }
+    }
+  }
+  &__photo {
+    @include reset;
+    display: flex;
+    background-size: contain;
+    width: 320px;
+    background-position: center;
+    margin-bottom: 30px;
+    @media screen and (max-width: 599px) {
+      & {
+        width: 280px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__name {
+    display: flex;
+    @include reset;
+    @include font-size(22px, 28.6px, 5.5px);
+    @include font-base;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media screen and (max-width: 599px) {
+      & {
+        @include font-size(18px, 23.4px, 5.5px);
+        justify-content: center;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    @include reset;
+    @include font-size(20px, 26px, 0);
+    @include font-base;
+    @media screen and (max-width: 599px) {
+      & {
+        @include font-size(12px, 15.6px, 0);
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.join-team{
+  max-width: 1440px;
+  @include reset;
+  display: flex;
+  flex-direction: row;
+  background-color: $color-base-blue;
+  overflow: hidden;
+  &__pic {
+    @include reset;
+    display: flex;
+    background-size: contain;
+    height: 440px;
+    background-position: center;
+    margin:60px 0 60px;
+    @media screen and (max-width: 899px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__pic-tab {
+    @include reset;
+    display: none;
+    background-size: contain;
+    height: 360px;
+    background-position: center;
+    margin:50px 0 50px;
+    @media screen and (max-width: 899px) {
+    & {
+      display: flex;
+    }
+  }
+    @media screen and (max-width: 599px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__pic-mob {
+    @include reset;
+    display: none;
+    background-size: contain;
+    width: 280px;
+    background-position: center;
+    @media screen and (max-width: 599px) {
+      & {
+        display: flex;
+      }
+    }
+  }
+  &__description {
+    @include reset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin-left: 80px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin-left: 60px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    @include reset;
+    @include font-size(70px, 63px, 0);
+    @include font-semi-bold;
+    max-width: 520px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 899px) {
+      & {
+        max-width: 478px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        max-width: 280px;
+        @include font-size(40px, 36px, 0);
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    @include reset;
+    @include font-size(20px, 26px, 0);
+    @include font-base;
+    max-width: 520px;
+    @media screen and (max-width: 899px) {
+      & {
+        max-width: 478px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin-bottom: 60px;
+        max-width: 280px;
+        @include font-size(12px, 15.6px, 0);
+      }
+    }
+  }
+}

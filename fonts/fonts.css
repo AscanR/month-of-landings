@@ -1,0 +1,16 @@
+@font-face {
+  src: url(./NotoSansDisplay-Regular.ttf) format("ttf");
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  src: url(./NotoSansDisplay-SemiBold.ttf) format("ttf");
+  font-family: "NotoSans";
+  font-weight: 600;
+}
+@font-face {
+  src: url(./NotoSansDisplay-Medium.ttf) format("ttf");
+  font-family: "NotoSans";
+  font-weight: 500;
+}

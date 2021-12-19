@@ -1,0 +1,184 @@
+.battle {
+  @include reset;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-base-bl;
+
+  &__header {
+    @include reset;
+    @include font-size(70px, 63px, 0);
+    @include font-semi-bold;
+    margin: 80px 0 40px 160px;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin: 65px 0 40px 80px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin: 50px 0 40px 50px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        @include font-size(40px, 36px, 0);
+        margin: 20px 0 20px 20px;
+        }
+      }
+  }
+  &__text {
+    @include reset;
+    @include font-size(20px, 26px, 0);
+    @include font-base;
+    margin: 0 0 110px 160px;
+    width: 500px;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin: 0 0 120px 80px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin: 0px 0 140px 50px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        @include font-size(12px, 15.6px, 0);
+        margin: 0 0 60px 20px;
+        width: 280px;
+      }
+    }
+  }
+  &__pics {
+    @include reset;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 74px 160px;
+    overflow: hidden;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin: 0 0 74px 80px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin: 0 0 104px 50px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        flex-direction: column;
+        margin: 60px 0 0 22px;
+      }
+    }
+  }
+  &__element {
+    @include reset;
+    display: flex;
+    margin-left: 80px;
+    &:first-child {
+      margin-left: 0;
+    }
+    @media screen and (max-width: 1279px) {
+      & {
+        margin-left: 40px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin-left: 28px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin-left: 0;
+        display: none;
+        &:first-child {
+          display: flex;
+        }
+      }
+    }
+  }
+  &__pic {
+    @include reset;
+    width: 320px;
+    @media screen and (max-width: 599px) {
+      & {
+        width: 280px;
+        }
+      }
+  }
+  &__pics-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 160px 0 100px;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin: 0 80px 0 60px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin: 0 50px 0 0;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin: 0 20px 20px 20px;
+      }
+    }
+  }
+  &__pic-left {
+    @include reset;
+    display: flex;
+    width: 440px;
+    @media screen and (max-width: 899px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__pic-left-tab {
+    @include reset;
+    display: none;
+    height: 220px;
+    @media screen and (max-width: 899px) {
+      & {
+        display: flex;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__pic-right {
+    @include reset;
+    width: 416px;
+    margin-bottom: 80px;
+    @media screen and (max-width: 599px) {
+      & {
+        margin-bottom: 0;
+        width: 280px;
+      }
+    }
+  }
+  &__dots {
+    @include reset;
+    cursor: pointer;
+    height: 8px;
+    width: 44px;
+    display: none;
+    align-self: center;
+    margin: 30px 0 60px;
+    @media screen and (max-width: 599px) {
+      & {
+        display: flex;
+      }
+    }
+  }
+}

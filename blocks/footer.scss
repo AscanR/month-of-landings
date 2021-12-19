@@ -1,0 +1,66 @@
+.footer {
+  max-width: 1440px;
+  @include reset;
+  background-color: $color-base-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__logo {
+    @include reset;
+    width: 38px;
+    margin-top: 80px;
+    @media screen and (max-width: 599px) {
+      & {
+        margin-top: 40px;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: $color-checkout;
+    margin-top: 60px;
+    @include size(218px, 48px, 8px);
+    @include font-size(15px, 18px, 1px);
+    @include font-semi-bold;
+    @media screen and (max-width: 599px) {
+      & {
+        margin-top: 40px;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-checkout-active;
+      transition: 0.3s;
+    }
+  }
+  &__text {
+    @include reset;
+    @include font-size(20px, 26px, 0);
+    @include font-base;
+    margin-top: 60px;
+    @media screen and (max-width: 599px) {
+      & {
+        @include font-size(12px, 15.6px, 0);
+        margin-top: 40px;
+      }
+    }
+  }
+  &__copyrights {
+    @include reset;
+    @include font-size(15.1px, 20px ,0);
+    @include font-base;
+    color: #8E9199;
+    margin: 20px 0 80px;
+    @media screen and (max-width: 599px) {
+      & {
+        @include font-size(12px, 12px, 0);
+        margin: 10px 0 40px;
+      }
+    }
+  }
+}

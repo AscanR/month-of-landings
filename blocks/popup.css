@@ -1,0 +1,13 @@
+.popup {
+  display: flex;
+}
+
+.main {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+
+/*# sourceMappingURL=popup.css.map */

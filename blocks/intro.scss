@@ -1,0 +1,147 @@
+.intro {
+  max-width: 1440px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $color-base-bl;
+  overflow: hidden;
+
+  &__description {
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin-left: 100px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin-left: 50px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin-left: 20px;
+      }
+    }
+  }
+  &__club {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include font-medium;
+    @include font-size(16px,14.4px,0);
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    background-color: $color-base-blue;
+    @include size(84px, 50px, 0);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    @media screen and (max-width: 599px) {
+      & {
+        @include font-size(12px,10.8px,0);
+        @include size(63px, 40px, 0);
+      }
+    }
+  }
+  &__header {
+    margin-bottom: 40px;
+    max-width: 500px;
+    @include font-size(70px, 63px, 0);
+    @include font-semi-bold;
+    @media screen and (max-width: 599px) {
+      & {
+        width: 280px;
+        @include font-size(40px, 36px, 0);
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 182px;
+    max-width: 500px;
+    @include font-size(20px, 26px, 0);
+    @include font-base;
+    @media screen and (max-width: 899px) {
+      & {
+        margin-bottom: 212px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin-bottom: 110px;
+        width: 280px;
+        @include font-size(12px, 15.5px, 0);
+      }
+    }
+  }
+  &__pic {
+    @include reset;
+    display: flex;
+    background-size: contain;
+    width: 416px;
+    height: 104px;
+    background-position: center;
+    margin-bottom: 80px;
+    @media screen and (max-width: 899px) {
+      & {
+        margin-bottom: 50px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin-bottom: 50px;
+        width: 280px;
+        height: 70px;
+      }
+    }
+  }
+  &__picture {
+    @include reset;
+    display: flex;
+    background-size: contain;
+    height: 640px;
+    background-position: center;
+    padding-top: 72px;
+    @media screen and (max-width: 899px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__picture-tab {
+    @include reset;
+    display: none;
+    background-size: contain;
+    height: 520px;
+    background-position: center;
+    padding-top: 220px;
+    @media screen and (max-width: 899px) {
+      & {
+        display: flex;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__picture-mob {
+    @include reset;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: -225px;
+    background-size: contain;
+    height: 60px;
+    background-position: center;
+    padding-top: 226px;
+    @media screen and (max-width: 599px) {
+      & {
+        display: flex;
+      }
+    }
+  }
+}

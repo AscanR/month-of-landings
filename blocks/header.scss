@@ -1,0 +1,101 @@
+.header {
+  max-width: 1440px;
+  display: flex;
+  background-color: $color-base-bl;
+
+  &__logo {
+    display: flex;
+    justify-self: center;
+    width: 38px;
+    background-position: center;
+    background-size: cover;
+    margin: 26px auto 60px 160px;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin: 26px auto 60px 80px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin: 26px auto 60px 50px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin: 16px auto 50px 20px;
+        width: 26px;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 160px;
+    @media screen and (max-width: 1279px) {
+      & {
+        margin-right: 80px;
+      }
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        margin-right: 50px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    justify-self: flex-start;
+    text-decoration: none;
+    @include font-size(15px, 16.5px, 1px);
+    @include font-base;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        @include font-size(13px, 16.25px, 1px);
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: $color-checkout;
+    margin-left: 50px;
+    @include size(218px, 48px, 8px);
+    @include font-size(15px, 18px, 1px);
+    @include font-semi-bold;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-checkout-active;
+      transition: 0.3s;
+    }
+    @media screen and (max-width: 899px) {
+      & {
+        @include size(184px, 44px, 8px);
+        @include font-size(13px, 18px, 1px);
+      }
+    }
+    @media screen and (max-width: 599px) {
+      & {
+        @include size(140px, 30px, 8px);
+        @include font-size(10px, 18px, 1px);
+      }
+    }
+  }
+}

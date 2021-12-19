@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Правильные шахматы</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="main">
+    <main class="page">
+      <header class="header">
+        <img
+          src="./images/keyhole.svg"
+          alt="Логотип. Замочная скважина."
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <a class="header__link" href="#">Вступайте в клуб &nbsp;&#8599;</a>
+          <button class="header__button" type="button" aria-label="Register">Зарегистрироваться</button>
+        </nav>
+      </header>
+      <section class="intro">
+        <div class="intro__description">
+          <p class="intro__club">Клуб</p>
+          <h1 class="intro__header">Правильные шахматы</h1>
+          <p class="intro__text">Приходите к нам, играть в шахматы! Сразитесь классическом поединке,
+            блиц состязании и бою с гройсмейстером.</p>
+          <img src="./images/chess_board.svg" alt="Шахматная доска. Синяя." class="intro__pic">
+        </div>
+        <img src="./images/main_picture_desktop.png" alt="Разноцветные круги" class="intro__picture">
+        <img src="./images/main_picture_tablet.png" alt="Разноцветные круги" class="intro__picture-tab">
+        <img src="./images/main_picture_mobile.png" alt="Разноцветные круги" class="intro__picture-mob">
+      </section>
+      <section class="team">
+        <h2 class="team__header">Наша команда</h2>
+        <p class="team__text">Лучшие шахматисты и шахматистки любители России, гройсмейстеры,
+          с ними играть — одно удовольствие!</p>
+        <div class="cards">
+          <div class="card">
+            <img src="./images/team_andrey.png" alt="Андрей" class="card__photo">
+            <h3 class="card__name">Андрей</h3>
+            <p class="card__text">Шахматист, писатель.</p>
+          </div>
+          <div class="card">
+            <img src="./images/team_nikita.png" alt="Никита" class="card__photo">
+            <h3 class="card__name">Никита</h3>
+            <p class="card__text">Шахматист, кулинар.</p>
+          </div>
+          <div class="card">
+            <img src="./images/team_aleksey.png" alt="Алексей" class="card__photo">
+            <h3 class="card__name">Алексей</h3>
+            <p class="card__text">Шахматист, геймер.</p>
+          </div>
+          <img src="./images/dots.svg" alt="Точки" class="cards__dots">
+        </div>
+      </section>
+      <section class="join-team">
+        <img src="./images/mid_picture_desktop.png" alt="Круги" class="join-team__pic">
+        <img src="./images/mid_picture_tablet.png" alt="Круги" class="join-team__pic-tab">
+        <div class="join-team__description">
+          <h2 class="join-team__header">Хочешь в команду?</h2>
+          <p class="join-team__text">Свяжись с нами и мы обсудим все детали присоеденения к команде.</p>
+          <img src="./images/mid_picture_mobile.png" alt="Круги" class="join-team__pic-mob">
+        </div>
+      </section>
+      <section class="battle">
+        <h2 class="battle__header">Сражения</h2>
+        <p class="battle__text">Сражайтесь в парах и приятно проводите время.
+          Если хотите прокачать свои навыки — сыграйте с нашими шахматистами.</p>
+        <ul class="battle__pics">
+          <li class="battle__element"><img class="battle__pic" src="./images/battle_pic_1.png" alt="Игра в шахматы на скамейке">
+          </li>
+          <li class="battle__element"><img class="battle__pic" src="./images/battle_pic_2.png" alt="Шахматные доски">
+          </li>
+          <li class="battle__element"><img class="battle__pic" src="./images/battle_pic_3.png" alt="Шахматная доска с часами">
+          </li>
+        </ul>
+        <img src="./images/dots.svg" alt="Точки" class="battle__dots">
+        <div class="battle__pics-bottom">
+          <img src="./images/bottom_picture_desktop.png" alt="Разноцветный круг" class="battle__pic-left">
+          <img src="./images/bottom_picture_tablet.png" alt="Разноцветный круг" class="battle__pic-left-tab">
+          <img src="./images/chess_board_green.svg" alt="Зеленая шахматная доска" class="battle__pic-right">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="./images/keyhole.svg" alt="Замочная скважина" class="footer__logo">
+      <button class="footer__button" type="button" aria-label="Register">Зарегистрироваться</button>
+      <p class="footer__text">Шахматный клуб в Москве.</p>
+      <p class="footer__copyrights">&copy;Chees Club.</p>
+    </footer>
+    <div class="popup" id="popup-profile">
+      <div class="popup__container">
+        <img src="./images/keyhole.svg" alt="Замочная скважина" class="popup__pic">
+        <form action="#" class="popup__position" name="popup" id="edit-profile">
+          <h2 class="popup__heading">Регистрация</h2>
+          <fieldset class="popup__inputs">
+            <input
+                    type="text"
+                    class="popup__item"
+                    name="name"
+                    value="Имя"
+                    placeholder=""
+                    id="name"
+            />
+            <input
+                    type="text"
+                    class="popup__item"
+                    name="prof"
+                    value="Email"
+                    placeholder=""
+                    id="email"
+            />
+            <button type="submit" class="popup__button" id="save-button">Зарегистрироваться</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
