@@ -8,8 +8,6 @@
 
 320 px
 768 px
-1024 px
-1280 px
 
 
 Github Pages: https://ascanr.github.io/
