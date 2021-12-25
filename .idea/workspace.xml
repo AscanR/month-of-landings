@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37678504-1218-46c0-b327-8447e393a90e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/index.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendors/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/battle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/battle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/join-team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/join-team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vendors/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.scss" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22Qa41Ft2KHXC6mMv0uCrufbvHv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test mode/month 4 test sliders" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\Desktop\Yandex_Practicum\4th_sprint\month_of_landings_easy_1\scripts" />
+      <recent name="C:\Users\Alex\Desktop\Yandex_Practicum\4th_sprint\month_of_landings_easy_1\pages" />
+      <recent name="C:\Users\Alex\Desktop\Yandex_Practicum\4th_sprint\month_of_landings_easy_1" />
+      <recent name="C:\Users\Alex\Desktop\Yandex_Practicum\4th_sprint\month_of_landings_easy_1\vendors" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37678504-1218-46c0-b327-8447e393a90e" name="Default Changelist" comment="" />
+      <created>1639772069968</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639772069968</updated>
+      <workItem from="1639772072089" duration="568000" />
+      <workItem from="1639772659364" duration="2103000" />
+      <workItem from="1639812734638" duration="15467000" />
+      <workItem from="1639855469280" duration="9673000" />
+      <workItem from="1639897303942" duration="15214000" />
+      <workItem from="1639922828203" duration="621000" />
+      <workItem from="1640104926983" duration="1379000" />
+      <workItem from="1640107510574" duration="835000" />
+      <workItem from="1640109128025" duration="7000" />
+      <workItem from="1640110747026" duration="227000" />
+      <workItem from="1640113997700" duration="6428000" />
+      <workItem from="1640121899041" duration="495000" />
+      <workItem from="1640193866830" duration="2245000" />
+      <workItem from="1640196313716" duration="79000" />
+      <workItem from="1640197890736" duration="3397000" />
+      <workItem from="1640287666331" duration="2894000" />
+      <workItem from="1640324322386" duration="549000" />
+      <workItem from="1640336883386" duration="61000" />
+      <workItem from="1640337002731" duration="4418000" />
+      <workItem from="1640416188269" duration="1470000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

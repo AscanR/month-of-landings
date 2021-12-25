@@ -8,6 +8,7 @@ function openPopup() {
     document.querySelector('.footer').style.display = 'none'
 
 }
+
 function closePopup() {
     document.querySelector('.popup').style.display = 'none'
     document.querySelector('.page').style.display = 'block'
@@ -17,3 +18,4 @@ function closePopup() {
 submitButtonRegister.addEventListener('click', () => closePopup())
 regButtonHeader.addEventListener('click', () => openPopup())
 regButtonFooter.addEventListener('click', () => openPopup())
+

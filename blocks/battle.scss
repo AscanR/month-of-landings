@@ -9,7 +9,7 @@
     @include reset;
     @include font-size(70px, 63px, 0);
     @include font-semi-bold;
-    margin: 80px 0 40px 160px;
+    margin: 60px 0 40px 160px;
     @media screen and (max-width: 1279px) {
       & {
         margin: 65px 0 40px 80px;
@@ -17,16 +17,17 @@
     }
     @media screen and (max-width: 899px) {
       & {
-        margin: 50px 0 40px 50px;
+        margin: 40px 0 40px 50px;
       }
     }
     @media screen and (max-width: 599px) {
       & {
         @include font-size(40px, 36px, 0);
         margin: 20px 0 20px 20px;
-        }
       }
+    }
   }
+
   &__text {
     @include reset;
     @include font-size(20px, 26px, 0);
@@ -40,17 +41,18 @@
     }
     @media screen and (max-width: 899px) {
       & {
-        margin: 0px 0 140px 50px;
+        margin: 0 0 140px 50px;
       }
     }
     @media screen and (max-width: 599px) {
       & {
         @include font-size(12px, 15.6px, 0);
-        margin: 0 0 60px 20px;
+        margin: 0 0 5px 20px;
         width: 280px;
       }
     }
   }
+
   &__pics {
     @include reset;
     display: flex;
@@ -74,13 +76,16 @@
       }
     }
   }
+
   &__element {
     @include reset;
     display: flex;
     margin-left: 80px;
+
     &:first-child {
       margin-left: 0;
     }
+
     @media screen and (max-width: 1279px) {
       & {
         margin-left: 40px;
@@ -95,25 +100,30 @@
       & {
         margin-left: 0;
         display: none;
+
         &:first-child {
           display: flex;
         }
       }
     }
   }
+
   &__pic {
     @include reset;
     width: 320px;
     @media screen and (max-width: 599px) {
       & {
         width: 280px;
-        }
+        margin: auto;
       }
+    }
   }
+
   &__pics-bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 0 160px 0 100px;
     @media screen and (max-width: 1279px) {
       & {
@@ -131,23 +141,22 @@
       }
     }
   }
-  &__pic-left {
+
+  &__pic-semicircle {
     @include reset;
     display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/bottom_picture_desktop.png");
     width: 440px;
-    @media screen and (max-width: 899px) {
-      & {
-        display: none;
-      }
-    }
-  }
-  &__pic-left-tab {
-    @include reset;
-    display: none;
     height: 220px;
+
     @media screen and (max-width: 899px) {
       & {
-        display: flex;
+        background-image: url("../images/bottom_picture_tablet.png");
+        padding: 0;
+        margin: 0;
+        width: 220px;
       }
     }
     @media screen and (max-width: 599px) {
@@ -156,17 +165,32 @@
       }
     }
   }
-  &__pic-right {
+
+  &__pic-board {
     @include reset;
     width: 416px;
+    height: 104px;
     margin-bottom: 80px;
+    box-sizing: border-box;
+    background-image: url("../images/chess_board_green.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    @media screen and (max-width: 899px) {
+      & {
+        margin-bottom: 55px;
+      }
+    }
     @media screen and (max-width: 599px) {
       & {
-        margin-bottom: 0;
+        margin: 0 auto;
         width: 280px;
+        height: 70px;
       }
     }
   }
+
   &__dots {
     @include reset;
     cursor: pointer;

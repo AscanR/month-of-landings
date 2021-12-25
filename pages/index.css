@@ -1,10 +1,12 @@
-@import "./vendors/normalize.css";
-@import "./fonts/fonts.css";
+@import "../vendors/normalize.css";
+@import "../fonts/fonts.css";
 .main {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   background-color: #000;
+  max-width: 1440px;
+  margin: auto;
+  font-family: "NotoSans", Arial, sans-serif;
 }
 
 .header {
@@ -32,7 +34,7 @@
 }
 @media screen and (max-width: 599px) {
   .header__logo {
-    margin: 16px auto 50px 20px;
+    margin: 16px auto 37px 20px;
     width: 26px;
   }
 }
@@ -41,6 +43,7 @@
   flex-direction: row;
   align-items: center;
   margin-right: 160px;
+  padding-bottom: 40px;
 }
 @media screen and (max-width: 1279px) {
   .header__nav {
@@ -64,7 +67,7 @@
   font-size: 15px;
   line-height: 16.5px;
   letter-spacing: 1px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -103,7 +106,7 @@
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 1px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   text-rendering: optimizeLegibility;
@@ -149,9 +152,11 @@
   overflow: hidden;
 }
 .intro__description {
+  position: relative;
   margin-left: 160px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 @media screen and (max-width: 1279px) {
   .intro__description {
@@ -169,10 +174,12 @@
   }
 }
 .intro__club {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 500;
   text-rendering: optimizeLegibility;
@@ -197,14 +204,18 @@
     line-height: 10.8px;
     width: 63px;
     height: 40px;
+    margin-top: 10px;
+    margin-bottom: 65px;
   }
 }
 .intro__header {
+  margin: 0;
+  padding: 0;
   margin-bottom: 40px;
   max-width: 500px;
   font-size: 70px;
   line-height: 63px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   text-rendering: optimizeLegibility;
@@ -219,14 +230,17 @@
     width: 280px;
     font-size: 40px;
     line-height: 36px;
+    margin-bottom: 17px;
   }
 }
 .intro__text {
+  margin: 0;
+  padding: 0;
   margin-bottom: 182px;
   max-width: 500px;
   font-size: 20px;
   line-height: 26px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -252,13 +266,15 @@
 .intro__pic {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
+  background-image: url("../images/chess_board.png");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 416px;
   height: 104px;
-  background-position: center;
   margin-bottom: 80px;
+  z-index: 1;
 }
 @media screen and (max-width: 899px) {
   .intro__pic {
@@ -267,62 +283,40 @@
 }
 @media screen and (max-width: 599px) {
   .intro__pic {
-    margin-bottom: 50px;
     width: 280px;
     height: 70px;
+    margin-bottom: 23px;
   }
 }
 .intro__picture {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  display: flex;
-  background-size: contain;
-  height: 640px;
+  position: absolute;
+  right: 0;
+  bottom: auto;
+  background-image: url("../images/main_picture_desktop.png");
+  background-repeat: no-repeat;
   background-position: center;
-  padding-top: 72px;
+  background-size: contain;
+  width: 480px;
+  height: 640px;
+  z-index: 0;
 }
 @media screen and (max-width: 899px) {
   .intro__picture {
-    display: none;
-  }
-}
-.intro__picture-tab {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: none;
-  background-size: contain;
-  height: 520px;
-  background-position: center;
-  padding-top: 220px;
-}
-@media screen and (max-width: 899px) {
-  .intro__picture-tab {
-    display: flex;
+    width: 130px;
+    height: 520px;
+    background-image: url("../images/main_picture_tablet.png");
+    background-position: bottom;
+    bottom: 50px;
   }
 }
 @media screen and (max-width: 599px) {
-  .intro__picture-tab {
-    display: none;
-  }
-}
-.intro__picture-mob {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: none;
-  position: absolute;
-  right: 20px;
-  top: -225px;
-  background-size: contain;
-  height: 60px;
-  background-position: center;
-  padding-top: 226px;
-}
-@media screen and (max-width: 599px) {
-  .intro__picture-mob {
-    display: flex;
+  .intro__picture {
+    bottom: auto;
+    right: 20px;
+    background-image: url("../images/main_picture_mobile.png");
+    background-position: top;
   }
 }
 
@@ -335,7 +329,7 @@
 .team__header {
   font-size: 70px;
   line-height: 63px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   text-rendering: optimizeLegibility;
@@ -367,7 +361,7 @@
 .team__text {
   font-size: 20px;
   line-height: 26px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -377,22 +371,21 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   width: 500px;
-  margin: 0px 160px 110px;
+  margin: 0 160px 110px;
 }
 @media screen and (max-width: 1279px) {
   .team__text {
-    margin-left: 80px;
-    margin: 0px 80px 110px;
+    margin: 0 80px 110px;
   }
 }
 @media screen and (max-width: 899px) {
   .team__text {
-    margin: 0px 50px 140px;
+    margin: 0 50px 140px;
   }
 }
 @media screen and (max-width: 599px) {
   .team__text {
-    margin: 0px 20px 60px;
+    margin: 0 20px 60px;
     font-size: 12px;
     line-height: 15.6px;
     width: 280px;
@@ -402,7 +395,6 @@
 .cards {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   margin: 0 160px 110px;
@@ -421,13 +413,12 @@
 @media screen and (max-width: 599px) {
   .cards {
     flex-direction: column;
-    margin: 0 20px 30px;
+    margin: 0 20px 4px;
   }
 }
 .cards__dots {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   cursor: pointer;
   height: 8px;
   width: 44px;
@@ -444,7 +435,6 @@
 .card {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
   margin-right: 80px;
@@ -471,7 +461,6 @@
 .card__photo {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   background-size: contain;
   width: 320px;
@@ -481,18 +470,17 @@
 @media screen and (max-width: 599px) {
   .card__photo {
     width: 280px;
-    margin-bottom: 20px;
+    margin: 0 auto 22px;
   }
 }
 .card__name {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   font-size: 22px;
   line-height: 28.6px;
   letter-spacing: 5.5px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -517,10 +505,9 @@
   display: flex;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   font-size: 20px;
   line-height: 26px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -542,69 +529,54 @@
   max-width: 1440px;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   background-color: #5036E6;
-  overflow: hidden;
+}
+@media screen and (max-width: 599px) {
+  .join-team {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .join-team__pic {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
+  box-sizing: border-box;
   background-size: contain;
+  background-image: url("../images/mid_picture_desktop.png");
+  background-repeat: no-repeat;
   height: 440px;
+  width: 660px;
   background-position: center;
   margin: 60px 0 60px;
+  overflow: hidden;
 }
 @media screen and (max-width: 899px) {
   .join-team__pic {
-    display: none;
-  }
-}
-.join-team__pic-tab {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: none;
-  background-size: contain;
-  height: 360px;
-  background-position: center;
-  margin: 50px 0 50px;
-}
-@media screen and (max-width: 899px) {
-  .join-team__pic-tab {
-    display: flex;
+    background-image: url("../images/mid_picture_tablet.png");
+    height: 360px;
+    width: 180px;
   }
 }
 @media screen and (max-width: 599px) {
-  .join-team__pic-tab {
-    display: none;
-  }
-}
-.join-team__pic-mob {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: none;
-  background-size: contain;
-  width: 280px;
-  background-position: center;
-}
-@media screen and (max-width: 599px) {
-  .join-team__pic-mob {
-    display: flex;
+  .join-team__pic {
+    background-image: url("../images/mid_picture_mobile.png");
+    height: 140px;
+    width: 280px;
+    margin: auto;
+    padding: 0;
   }
 }
 .join-team__description {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 100px;
+  padding-bottom: 40px;
 }
 @media screen and (max-width: 1279px) {
   .join-team__description {
@@ -614,6 +586,7 @@
 @media screen and (max-width: 899px) {
   .join-team__description {
     margin-left: 60px;
+    padding-bottom: 0px;
   }
 }
 @media screen and (max-width: 599px) {
@@ -623,13 +596,12 @@
   }
 }
 .join-team__header {
-  display: flex;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  display: flex;
   font-size: 70px;
   line-height: 63px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   text-rendering: optimizeLegibility;
@@ -651,16 +623,16 @@
     max-width: 280px;
     font-size: 40px;
     line-height: 36px;
+    margin-bottom: 17px;
   }
 }
 .join-team__text {
-  display: flex;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  display: flex;
   font-size: 20px;
   line-height: 26px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -688,7 +660,6 @@
 .battle {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   max-width: 1440px;
   display: flex;
   flex-direction: column;
@@ -697,10 +668,9 @@
 .battle__header {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   font-size: 70px;
   line-height: 63px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   text-rendering: optimizeLegibility;
@@ -709,7 +679,7 @@
   -moz-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin: 80px 0 40px 160px;
+  margin: 60px 0 40px 160px;
 }
 @media screen and (max-width: 1279px) {
   .battle__header {
@@ -718,7 +688,7 @@
 }
 @media screen and (max-width: 899px) {
   .battle__header {
-    margin: 50px 0 40px 50px;
+    margin: 40px 0 40px 50px;
   }
 }
 @media screen and (max-width: 599px) {
@@ -731,10 +701,9 @@
 .battle__text {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   font-size: 20px;
   line-height: 26px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -753,21 +722,20 @@
 }
 @media screen and (max-width: 899px) {
   .battle__text {
-    margin: 0px 0 140px 50px;
+    margin: 0 0 140px 50px;
   }
 }
 @media screen and (max-width: 599px) {
   .battle__text {
     font-size: 12px;
     line-height: 15.6px;
-    margin: 0 0 60px 20px;
+    margin: 0 0 5px 20px;
     width: 280px;
   }
 }
 .battle__pics {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   margin: 0 0 74px 160px;
@@ -792,7 +760,6 @@
 .battle__element {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   margin-left: 80px;
 }
@@ -821,18 +788,19 @@
 .battle__pic {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   width: 320px;
 }
 @media screen and (max-width: 599px) {
   .battle__pic {
     width: 280px;
+    margin: auto;
   }
 }
 .battle__pics-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 0 160px 0 100px;
 }
 @media screen and (max-width: 1279px) {
@@ -850,52 +818,57 @@
     margin: 0 20px 20px 20px;
   }
 }
-.battle__pic-left {
+.battle__pic-semicircle {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/bottom_picture_desktop.png");
   width: 440px;
-}
-@media screen and (max-width: 899px) {
-  .battle__pic-left {
-    display: none;
-  }
-}
-.battle__pic-left-tab {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: none;
   height: 220px;
 }
 @media screen and (max-width: 899px) {
-  .battle__pic-left-tab {
-    display: flex;
+  .battle__pic-semicircle {
+    background-image: url("../images/bottom_picture_tablet.png");
+    padding: 0;
+    margin: 0;
+    width: 220px;
   }
 }
 @media screen and (max-width: 599px) {
-  .battle__pic-left-tab {
+  .battle__pic-semicircle {
     display: none;
   }
 }
-.battle__pic-right {
+.battle__pic-board {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   width: 416px;
+  height: 104px;
   margin-bottom: 80px;
+  box-sizing: border-box;
+  background-image: url("../images/chess_board_green.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+@media screen and (max-width: 899px) {
+  .battle__pic-board {
+    margin-bottom: 55px;
+  }
 }
 @media screen and (max-width: 599px) {
-  .battle__pic-right {
-    margin-bottom: 0;
+  .battle__pic-board {
+    margin: 0 auto;
     width: 280px;
+    height: 70px;
   }
 }
 .battle__dots {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   cursor: pointer;
   height: 8px;
   width: 44px;
@@ -913,7 +886,6 @@
   max-width: 1440px;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   background-color: #5036E6;
   display: flex;
   flex-direction: column;
@@ -922,7 +894,6 @@
 .footer__logo {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   width: 38px;
   margin-top: 80px;
 }
@@ -944,7 +915,7 @@
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 1px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   text-rendering: optimizeLegibility;
@@ -956,7 +927,13 @@
 }
 @media screen and (max-width: 599px) {
   .footer__button {
+    width: 140px;
+    height: 30px;
+    border-radius: 8px;
     margin-top: 40px;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 1px;
   }
 }
 .footer__button:hover {
@@ -967,10 +944,9 @@
 .footer__text {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   font-size: 20px;
   line-height: 26px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -991,10 +967,9 @@
 .footer__copyrights {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   font-size: 15.1px;
   line-height: 20px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -1048,11 +1023,10 @@
 .popup__heading {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   font-size: 34px;
   line-height: 30.6px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   text-rendering: optimizeLegibility;
@@ -1092,7 +1066,7 @@
   box-sizing: border-box;
   background-color: #1A1A1A;
   border-radius: 8px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -1142,7 +1116,7 @@
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 1px;
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   text-rendering: optimizeLegibility;

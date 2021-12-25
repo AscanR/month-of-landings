@@ -1,4 +1,7 @@
 .main {
   @include reset;
   background-color: $color-base-bl;
+  max-width: 1440px;
+  margin: auto;
+  font-family: 'NotoSans', Arial, sans-serif;
 }

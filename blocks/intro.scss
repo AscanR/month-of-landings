@@ -8,9 +8,11 @@
   overflow: hidden;
 
   &__description {
+    position: relative;
     margin-left: 160px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
     @media screen and (max-width: 1279px) {
       & {
         margin-left: 100px;
@@ -27,12 +29,14 @@
       }
     }
   }
+
   &__club {
+    @include reset;
     display: flex;
     align-items: center;
     justify-content: center;
     @include font-medium;
-    @include font-size(16px,14.4px,0);
+    @include font-size(16px, 14.4px, 0);
     text-transform: uppercase;
     margin-bottom: 70px;
     background-color: $color-base-blue;
@@ -41,12 +45,16 @@
     border-bottom-right-radius: 50px;
     @media screen and (max-width: 599px) {
       & {
-        @include font-size(12px,10.8px,0);
+        @include font-size(12px, 10.8px, 0);
         @include size(63px, 40px, 0);
+        margin-top: 10px;
+        margin-bottom: 65px;
       }
     }
   }
+
   &__header {
+    @include reset;
     margin-bottom: 40px;
     max-width: 500px;
     @include font-size(70px, 63px, 0);
@@ -55,10 +63,13 @@
       & {
         width: 280px;
         @include font-size(40px, 36px, 0);
+        margin-bottom: 17px;
       }
     }
   }
+
   &__text {
+    @include reset;
     margin-bottom: 182px;
     max-width: 500px;
     @include font-size(20px, 26px, 0);
@@ -76,14 +87,18 @@
       }
     }
   }
+
   &__pic {
     @include reset;
     display: flex;
+    background-image: url("../images/chess_board.png");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 416px;
     height: 104px;
-    background-position: center;
     margin-bottom: 80px;
+    z-index: 1;
     @media screen and (max-width: 899px) {
       & {
         margin-bottom: 50px;
@@ -91,56 +106,40 @@
     }
     @media screen and (max-width: 599px) {
       & {
-        margin-bottom: 50px;
         width: 280px;
         height: 70px;
+        margin-bottom: 23px;
       }
     }
   }
+
   &__picture {
     @include reset;
-    display: flex;
-    background-size: contain;
-    height: 640px;
-    background-position: center;
-    padding-top: 72px;
-    @media screen and (max-width: 899px) {
-      & {
-        display: none;
-      }
-    }
-  }
-  &__picture-tab {
-    @include reset;
-    display: none;
-    background-size: contain;
-    height: 520px;
-    background-position: center;
-    padding-top: 220px;
-    @media screen and (max-width: 899px) {
-      & {
-        display: flex;
-      }
-    }
-    @media screen and (max-width: 599px) {
-      & {
-        display: none;
-      }
-    }
-  }
-  &__picture-mob {
-    @include reset;
-    display: none;
     position: absolute;
-    right: 20px;
-    top: -225px;
-    background-size: contain;
-    height: 60px;
+    right: 0;
+    bottom: auto;
+    background-image: url("../images/main_picture_desktop.png");
+    background-repeat: no-repeat;
     background-position: center;
-    padding-top: 226px;
+    background-size: contain;
+    width: 480px;
+    height: 640px;
+    z-index: 0;
+    @media screen and (max-width: 899px) {
+      & {
+        width: 130px;
+        height: 520px;
+        background-image: url("../images/main_picture_tablet.png");
+        background-position: bottom;
+        bottom: 50px;
+      }
+    }
     @media screen and (max-width: 599px) {
       & {
-        display: flex;
+        bottom: auto;
+        right: 20px;
+        background-image: url("../images/main_picture_mobile.png");
+        background-position: top;
       }
     }
   }

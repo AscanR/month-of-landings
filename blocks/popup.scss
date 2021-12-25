@@ -9,6 +9,7 @@
     align-items: center;
     align-content: center;
   }
+
   &__pic {
     width: 38px;
     height: 54px;
@@ -25,10 +26,12 @@
       }
     }
   }
+
   &__position {
     display: flex;
     flex-direction: column;
   }
+
   &__heading {
     @include reset;
     display: flex;
@@ -43,6 +46,7 @@
       }
     }
   }
+
   &__inputs {
     display: flex;
     flex-direction: column;
@@ -57,6 +61,7 @@
       }
     }
   }
+
   &__item {
     border: 0;
     width: 100%;
@@ -67,30 +72,36 @@
     @include font-base;
     @include font-size(15px, 18px, 0);
     padding-left: 28px;
+
     &:last-of-type {
       margin-top: 20px;
     }
+
     &:focus {
       cursor: pointer;
       outline-style: none;
     }
+
     &:hover {
       cursor: pointer;
       outline-style: none;
       opacity: 0.6;
       transition: 0.3s linear;
     }
+
     @media screen and (max-width: 599px) {
       & {
         height: 40px;
         padding-left: 18px;
         @include font-size(12px, 18px, 0);
+
         &:last-of-type {
           margin-top: 10px;
         }
       }
     }
   }
+
   &__button {
     display: flex;
     flex-direction: row;
@@ -109,6 +120,7 @@
       background-color: $color-checkout-active;
       transition: 0.3s;
     }
+
     @media screen and (max-width: 899px) {
       & {
         margin-top: 243px;

@@ -22,16 +22,18 @@
     }
     @media screen and (max-width: 599px) {
       & {
-        margin: 16px auto 50px 20px;
+        margin: 16px auto 37px 20px;
         width: 26px;
       }
     }
   }
+
   &__nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-right: 160px;
+    padding-bottom: 40px;
     @media screen and (max-width: 1279px) {
       & {
         margin-right: 80px;
@@ -48,16 +50,19 @@
       }
     }
   }
+
   &__link {
     display: flex;
     justify-self: flex-start;
     text-decoration: none;
     @include font-size(15px, 16.5px, 1px);
     @include font-base;
+
     &:hover {
       opacity: 0.5;
       transition: 0.3s;
     }
+
     @media screen and (max-width: 899px) {
       & {
         @include font-size(13px, 16.25px, 1px);
@@ -69,6 +74,7 @@
       }
     }
   }
+
   &__button {
     display: flex;
     align-items: center;
@@ -85,6 +91,7 @@
       background-color: $color-checkout-active;
       transition: 0.3s;
     }
+
     @media screen and (max-width: 899px) {
       & {
         @include size(184px, 44px, 8px);

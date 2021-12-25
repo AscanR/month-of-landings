@@ -17,9 +17,10 @@
   @media screen and (max-width: 599px) {
     & {
       flex-direction: column;
-      margin: 0 20px 30px;
+      margin: 0 20px 4px;
     }
   }
+
   &__dots {
     @include reset;
     cursor: pointer;
